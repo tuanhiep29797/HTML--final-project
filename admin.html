@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/640px-LEGO_logo.svg.png" id="logo" alt="logo">
+            <button><a href="./index.html">Home</a></button>
+            <div id="user">
+                <button><a href="./admin.html">Admin</a></button>
+                <button id="logout"><a href="./index.html">Logout</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="container center">
+        <form id="formProduct">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="number" name="price" id="price" placeholder="Price" required>
+            <textarea name="describe" id="describe" placeholder="Describe..."></textarea>            
+            <input type="text" name="img" id="img" placeholder="Url Image">
+            <button type="submit" id="addupdatebtn" class="btn">Add</button>
+        </form>
+    </div>
+    <h3>List Product</h3>
+    <div class="container center">
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Describe</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
